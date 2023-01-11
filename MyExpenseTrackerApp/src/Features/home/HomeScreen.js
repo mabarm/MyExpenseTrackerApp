@@ -51,21 +51,22 @@ function HomeScreen({navigation}) {
           ]}>
           Dear User,
         </Text>
-      </View>
-
-      <View style={HomeScreenStyles.BalanceContainer}>
-        <Text style={HomeScreenStyles.BalanceType}>Total Balance</Text>
-        <Text style={HomeScreenStyles.TotalBalanceValue}>
-          Rs {income + expenses}
-        </Text>
-        <View style={HomeScreenStyles.BalanceTypeBox}>
-          <View>
-            <Text style={HomeScreenStyles.BalanceType}>Income</Text>
-            <Text style={HomeScreenStyles.BalanceTypeValue}>Rs {income}</Text>
-          </View>
-          <View>
-            <Text style={HomeScreenStyles.BalanceType}>Expenses</Text>
-            <Text style={HomeScreenStyles.BalanceTypeValue}>Rs {expenses}</Text>
+        <View style={HomeScreenStyles.BalanceContainer}>
+          <Text style={HomeScreenStyles.BalanceType}>Total Balance</Text>
+          <Text style={HomeScreenStyles.TotalBalanceValue}>
+            Rs {income + expenses}
+          </Text>
+          <View style={HomeScreenStyles.BalanceTypeBox}>
+            <View>
+              <Text style={HomeScreenStyles.BalanceType}>Income</Text>
+              <Text style={HomeScreenStyles.BalanceTypeValue}>Rs {income}</Text>
+            </View>
+            <View>
+              <Text style={HomeScreenStyles.BalanceType}>Expenses</Text>
+              <Text style={HomeScreenStyles.BalanceTypeValue}>
+                Rs {expenses}
+              </Text>
+            </View>
           </View>
         </View>
       </View>
