@@ -1,4 +1,4 @@
-# MyExpenseTrackerApp
+# My Expense Tracker App
 App to track my expense
 
 Can view income, expenses and view all transactions
