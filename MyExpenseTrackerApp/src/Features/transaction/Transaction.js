@@ -1,5 +1,12 @@
 import React, {useContext, useState} from 'react';
-import {View, Text, TouchableOpacity, TextInput, Alert} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  TextInput,
+  Alert,
+  SafeAreaView,
+} from 'react-native';
 import TransactionContext from '../../Frameworks/TransactionContext';
 import TransactionStyles from './TransactionStyles';
 
@@ -20,7 +27,7 @@ function Transaction({navigation, route}) {
     ]);
 
   return (
-    <View style={TransactionStyles.MainView}>
+    <SafeAreaView style={TransactionStyles.MainView}>
       <Text style={TransactionStyles.Add}>Add transaction</Text>
       <Text style={TransactionStyles.Description}>Description</Text>
       <TextInput
@@ -83,7 +90,7 @@ function Transaction({navigation, route}) {
           <Text style={TransactionStyles.PressableText}>Cancel</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

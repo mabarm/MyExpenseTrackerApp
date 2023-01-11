@@ -2,8 +2,10 @@ import {StyleSheet} from 'react-native';
 
 const TransactionItemStyles = StyleSheet.create({
   MainView: {
-    backgroundColor: '#98D7C2',
+    backgroundColor: '#b9d0d4',
     marginTop: 10,
+    paddingVertical: 20,
+    borderRadius: 14,
   },
   ItemBox: {
     flexDirection: 'row',
