@@ -35,6 +35,7 @@ const HomeScreenStyles = StyleSheet.create({
     opacity: 2,
     paddingHorizontal: 25,
     paddingVertical: 16,
+    alignSelf: 'center',
   },
   TotalBalanceValue: {
     fontFamily: 'Inter',

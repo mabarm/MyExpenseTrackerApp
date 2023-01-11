@@ -1,5 +1,11 @@
 import React, {useContext, useState, useEffect} from 'react';
-import {Text, View, TouchableOpacity, FlatList} from 'react-native';
+import {
+  Text,
+  View,
+  TouchableOpacity,
+  FlatList,
+  SafeAreaView,
+} from 'react-native';
 import TransactionContext from '../../Frameworks/TransactionContext';
 import TransactionItem from '../transaction/TransactionItem';
 import HomeScreenStyles from './HomeScreenStyles';
@@ -29,7 +35,7 @@ function HomeScreen({navigation}) {
   };
 
   return (
-    <View style={HomeScreenStyles.MainView}>
+    <SafeAreaView style={HomeScreenStyles.MainView}>
       <View style={HomeScreenStyles.OuterContainer}>
         <Text
           style={[
@@ -86,7 +92,7 @@ function HomeScreen({navigation}) {
         }}>
         <Text style={HomeScreenStyles.AddText}>+</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 
